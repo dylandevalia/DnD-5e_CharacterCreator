@@ -24,9 +24,9 @@ public class Main
 //	    }
     }
     
-    public static void print(int inte)
+    public static void print(int print)
     {
-	    System.out.println(inte);
+	    System.out.println(print);
     }
 	
 }
