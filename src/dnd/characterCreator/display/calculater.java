@@ -112,8 +112,7 @@ public class calculater extends Application
 			symbol = '/';
 			answer = num1 / num2;
 		}
-		 
+		
 		lblAnswer.setText("" + num1 + " " + symbol + " " + num2 + " = " + answer);
 	}
-	
 }
