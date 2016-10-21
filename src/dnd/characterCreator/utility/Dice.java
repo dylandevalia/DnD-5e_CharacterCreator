@@ -64,6 +64,7 @@ public class Dice
 		{
 			tmp = 0; // Temporary max value holder
 			highestIndex = 0; // Index of the highest value
+			
 			/* Step through rolls[] and gets highest value's index */
 			for (int j = 0; j < rolls.length; j++)
 			{
