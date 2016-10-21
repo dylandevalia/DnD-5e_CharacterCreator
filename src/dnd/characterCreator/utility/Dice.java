@@ -2,8 +2,6 @@ package dnd.characterCreator.utility;
 
 import java.util.Random;
 
-/* Does this work? */
-
 public class Dice
 {
 	/**
