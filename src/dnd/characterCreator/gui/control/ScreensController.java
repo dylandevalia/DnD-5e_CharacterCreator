@@ -4,8 +4,6 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.beans.property.DoubleProperty;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -13,8 +11,16 @@ import javafx.scene.layout.StackPane;
 
 import java.util.HashMap;
 
+/**
+ * Controls all the javafx nodes
+ */
 public class ScreensController extends StackPane {
 	
+	/**
+	 * Hashmap which holds all the screen
+	 * String - The name of the node
+	 * Node - The javafx node
+	 */
 	private HashMap<String, Node> screens = new HashMap<>();
 	
 	/**
@@ -72,34 +78,32 @@ public class ScreensController extends StackPane {
 			if (!getChildren().isEmpty()) { // Are there multiple screens
 				
 				Timeline fade = new Timeline(   // Fade animation
-						// Start at 100%
+						/* Start at 100% */
 						new KeyFrame(javafx.util.Duration.ZERO, new KeyValue(opacity, 1.0)),
-						// Over one second fade in new screen
-						new KeyFrame(new javafx.util.Duration(1000),
-								// Event handler
-								new EventHandler<ActionEvent>() {
-									@Override
-									public void handle(ActionEvent event) {
-										getChildren().remove(0);
-										
-										getChildren().add(0, screens.get(name));
-										Timeline fadeIn = new Timeline(
-												new KeyFrame(javafx.util.Duration.ZERO, new KeyValue(opacity, 0.0)),
-												new KeyFrame(new javafx.util.Duration(800), new KeyValue(opacity, 1.0))
-										);
-										fadeIn.play();
-									}
+						/* Over half a second, fade out */
+						new KeyFrame(new javafx.util.Duration(500),
+								// Event handler to fade in new screen
+								event -> {
+									getChildren().remove(0);
+									
+									getChildren().add(0, screens.get(name));    // Get new screen's name
+									/* Over half a second, fade in */
+									Timeline fadeIn = new Timeline(
+											new KeyFrame(javafx.util.Duration.ZERO, new KeyValue(opacity, 0.0)),
+											new KeyFrame(new javafx.util.Duration(500), new KeyValue(opacity, 1.0))
+									);
+									fadeIn.play();  // Play animation
 								}, new KeyValue(opacity, 0.0)
 						)
 				);
-				fade.play();
+				fade.play();    // Play animation
 			} else {    // If nothing else is displayed then just show the screen
 				setOpacity(0.0);
 				getChildren().add(screens.get(name));
 				Timeline fadeIn = new Timeline(new KeyFrame(javafx.util.Duration.ZERO, new KeyValue(opacity, 0.0)),
-						new KeyFrame(new javafx.util.Duration(2500), new KeyValue(opacity, 1.0))
+						new KeyFrame(new javafx.util.Duration(200), new KeyValue(opacity, 1.0))
 				);
-				fadeIn.play();
+				fadeIn.play();  // Play animation
 			}
 			return true;
 		} else {
