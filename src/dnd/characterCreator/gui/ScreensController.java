@@ -1,4 +1,4 @@
-package dnd.characterCreator.gui.control;
+package dnd.characterCreator.gui;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -44,8 +44,8 @@ public class ScreensController extends StackPane {
 		try {
 			FXMLLoader myLoader = new FXMLLoader(getClass().getResource(resource));
 			Parent loadScreen = (Parent) myLoader.load();
-			ControlledScreen myScreenControler = ((ControlledScreen) myLoader.getController());
-			myScreenControler.setScreenParent(this);
+			ControlledScreen myScreenController = ((ControlledScreen) myLoader.getController());
+			myScreenController.setScreenParent(this);
 			addScreen(name, loadScreen);
 			return true;
 		} catch (Exception e) {
@@ -54,6 +54,12 @@ public class ScreensController extends StackPane {
 		}
 	}
 	
+	/**
+	 * Unloads the screen from the hashmap
+	 *
+	 * @param name The name of the screen to unload
+	 * @return True of false if method was successful
+	 */
 	public boolean unloadScreen(String name) {
 		if (screens.remove(name) == null) {
 			System.out.println("Screen did not exist");

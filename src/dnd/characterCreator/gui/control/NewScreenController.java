@@ -1,5 +1,8 @@
 package dnd.characterCreator.gui.control;
 
+import dnd.characterCreator.gui.ControlledScreen;
+import dnd.characterCreator.gui.ScreensController;
+import dnd.characterCreator.gui.ScreensFramework;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -11,9 +14,7 @@ public class NewScreenController implements ControlledScreen {
 	
 	@FXML
 	public void initialize() {
-		btn_mainMenu.setOnAction(event -> {
-			goToMainMenu();
-		});
+		btn_mainMenu.setOnAction(event -> goToMainMenu());
 	}
 	
 	public void setScreenParent(ScreensController screenParent) {
