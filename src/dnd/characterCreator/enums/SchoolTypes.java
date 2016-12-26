@@ -1,0 +1,5 @@
+package dnd.characterCreator.enums;
+
+public enum SchoolTypes {
+	ABJURATION, CONJURATION, DIVINATION, ENCHANTMENT, EVOCATION, ILLUSION, NECROMANCY, TRANSMUATION
+}
