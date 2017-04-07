@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 public class NewScreenController implements ControlledScreen {
 	
 	private ScreensController myController;
+	
 	@FXML
 	private Button btn_mainMenu;
 	
@@ -21,7 +22,6 @@ public class NewScreenController implements ControlledScreen {
 		myController = screenParent;
 	}
 	
-	@FXML
 	private void goToMainMenu() {
 		myController.setScreen(ScreensFramework.MAIN_SCREEN);
 	}

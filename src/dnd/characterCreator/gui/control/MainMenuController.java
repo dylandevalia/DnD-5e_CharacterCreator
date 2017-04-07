@@ -22,7 +22,6 @@ public class MainMenuController implements ControlledScreen {
 		myController = screenParent;
 	}
 	
-	@FXML
 	private void goToNewScreen() {
 		myController.setScreen(ScreensFramework.NEW_SCREEN);
 	}

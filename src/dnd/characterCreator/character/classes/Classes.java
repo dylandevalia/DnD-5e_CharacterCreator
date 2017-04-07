@@ -1,5 +1,9 @@
 package dnd.characterCreator.character.classes;
 
+import dnd.characterCreator.spell.Spell;
+
 public interface Classes {
-	public boolean hasMagic();
+	boolean hasMagic();
+	
+	Spell[] getCantrip();
 }
