@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="dnd.characterCreator.gui.control.ChooseRaceController">
+    <children>
+        <Text layoutX="487.0" layoutY="70.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a Race">
+            <font>
+                <Font name="Book Antiqua" size="48.0"/>
+            </font>
+        </Text>
+        <Button fx:id="btn_dragonborn" alignment="CENTER" layoutX="350.0" layoutY="184.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Dragonborn" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_dwarf" alignment="CENTER" layoutX="793.0" layoutY="184.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Dwarf" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_elf" alignment="CENTER" layoutX="350.0" layoutY="283.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Elf" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_gnome" alignment="CENTER" layoutX="793.0" layoutY="283.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Gnome" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_halfElf" alignment="CENTER" layoutX="350.0" layoutY="382.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Half-Elf" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_halfling" alignment="CENTER" layoutX="793.0" layoutY="382.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Halfling" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_halfOrc" alignment="CENTER" layoutX="350.0" layoutY="481.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Half-Orc" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_human" alignment="CENTER" layoutX="793.0" layoutY="481.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Human" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+
+        <Button fx:id="btn_tiefling" alignment="CENTER" layoutX="350.0" layoutY="581.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Tiefling" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_random" alignment="CENTER" layoutX="793.0" layoutY="581.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Random" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="dnd.characterCreator.gui.control.ChooseClassController">
+    <children>
+        <Text layoutX="481.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a Class">
+            <font>
+                <Font name="Book Antiqua" size="48.0"/>
+            </font>
+        </Text>
+        <Button fx:id="btn_barbarian" alignment="CENTER" layoutX="350.0" layoutY="170.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Barbarian" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_cleric" alignment="CENTER" layoutX="350.0" layoutY="255.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Cleric" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_fighter" alignment="CENTER" layoutX="350.0" layoutY="340.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Fighter" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_paladin" alignment="CENTER" layoutX="350.0" layoutY="425.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Paladin" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+
+        <Button fx:id="btn_sorcerer" alignment="CENTER" layoutX="350.0" layoutY="510.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Sorcerer" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_wizard" alignment="CENTER" layoutX="350.0" layoutY="594.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Wizard" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_bard" alignment="CENTER" layoutX="793.0" layoutY="170.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Bard" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_druid" alignment="CENTER" layoutX="793.0" layoutY="255.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Druid" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_monk" alignment="CENTER" layoutX="793.0" layoutY="340.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Monk" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_rogue" alignment="CENTER" layoutX="793.0" layoutY="425.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Rogue" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_warlock" alignment="CENTER" layoutX="793.0" layoutY="510.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Warlock" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_random" alignment="CENTER" layoutX="793.0" layoutY="594.0" mnemonicParsing="false"
+                prefHeight="40.0" prefWidth="137.0" text="Random" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua" size="20.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_previous" layoutX="34.0" layoutY="34.0" mnemonicParsing="false" text="←">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,7 +1,7 @@
 package dnd.characterCreator;
 
+import dnd.characterCreator.character.Player;
 import dnd.characterCreator.character.classes.Wizard;
-import dnd.characterCreator.character.player.Player;
 import dnd.characterCreator.character.races.Human;
 import dnd.characterCreator.utility.Dice;
 
@@ -11,7 +11,7 @@ public class Main {
 	private static Player player;
 	
 	public static void main(String[] args) {
-		tmp();
+		//tmp();
 		int tmp;
 		int tmpMod;
 		for (int i = 0; i < 20; i++) {

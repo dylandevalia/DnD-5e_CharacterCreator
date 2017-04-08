@@ -9,11 +9,12 @@ import javafx.stage.Stage;
  * Main class which should be called to run the program
  */
 public class ScreensFramework extends Application {
-	
-	public static final String MAIN_SCREEN = "main";
-	public static final String MAIN_SCREEN_FXML = "view/main.fxml";
-	public static final String NEW_SCREEN = "new";
-	public static final String NEW_SCREEN_FXML = "view/new.fxml";
+	public static final String MAIN_MENU_SCREEN = "mainMenu";
+	public static final String MAIN_MENU_SCREEN_FXML = "view/mainMenu.fxml";
+	public static final String CHOOSE_RACE_SCREEN = "chooseRace";
+	public static final String CHOOSE_RACE_SCREEN_FXML = "view/chooseRace.fxml";
+	public static final String CHOOSE_CLASS_SCREEN = "chooseClass";
+	public static final String CHOOSE_CLASS_SCREEN_FXML = "view/chooseClass.fxml";
 	
 	/**
 	 * Creates window and points it to the fxml file
@@ -24,10 +25,11 @@ public class ScreensFramework extends Application {
 	public void start(Stage primaryStage) {
 		ScreensController mainContainer = new ScreensController();
 		
-		mainContainer.loadScreen(ScreensFramework.MAIN_SCREEN, ScreensFramework.MAIN_SCREEN_FXML);
-		mainContainer.loadScreen(ScreensFramework.NEW_SCREEN, ScreensFramework.NEW_SCREEN_FXML);
+		mainContainer.loadScreen(ScreensFramework.MAIN_MENU_SCREEN, ScreensFramework.MAIN_MENU_SCREEN_FXML);
+		mainContainer.loadScreen(ScreensFramework.CHOOSE_RACE_SCREEN, ScreensFramework.CHOOSE_RACE_SCREEN_FXML);
+		mainContainer.loadScreen(ScreensFramework.CHOOSE_CLASS_SCREEN, ScreensFramework.CHOOSE_CLASS_SCREEN_FXML);
 		
-		mainContainer.setScreen(ScreensFramework.MAIN_SCREEN);
+		mainContainer.setScreen(ScreensFramework.MAIN_MENU_SCREEN);
 		
 		Group root = new Group();
 		root.getChildren().addAll(mainContainer);
