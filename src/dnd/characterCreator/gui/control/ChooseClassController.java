@@ -1,7 +1,7 @@
 package dnd.characterCreator.gui.control;
 
 import dnd.characterCreator.character.Player;
-import dnd.characterCreator.character.classes.Classes;
+import dnd.characterCreator.character.classes.IClass;
 import dnd.characterCreator.character.classes.Wizard;
 import dnd.characterCreator.gui.ControlledScreen;
 import dnd.characterCreator.gui.ScreensController;
@@ -34,8 +34,9 @@ public class ChooseClassController implements ControlledScreen {
 		myController.setScreen(ScreensFramework.CHOOSE_RACE_SCREEN);
 	}
 	
-	private void goToAbilityScores(Classes classes) {
-		Player.playerCharacter.setClass(classes);
+	private void goToAbilityScores(IClass IClass) {
+		System.out.println(IClass.getClassName());
+		Player.playerCharacter.setClass(IClass);
 		myController.setScreen(ScreensFramework.MAIN_MENU_SCREEN);
 	}
 }

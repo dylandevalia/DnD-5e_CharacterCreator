@@ -2,7 +2,7 @@ package dnd.characterCreator.gui.control;
 
 import dnd.characterCreator.character.Player;
 import dnd.characterCreator.character.races.Human;
-import dnd.characterCreator.character.races.Races;
+import dnd.characterCreator.character.races.IRace;
 import dnd.characterCreator.gui.ControlledScreen;
 import dnd.characterCreator.gui.ScreensController;
 import dnd.characterCreator.gui.ScreensFramework;
@@ -26,7 +26,8 @@ public class ChooseRaceController implements ControlledScreen {
 		myController = screenParent;
 	}
 	
-	private void goToChooseClass(Races race) {
+	private void goToChooseClass(IRace race) {
+		System.out.println(race.getRaceName());
 		Player.playerCharacter.setRace(race);
 		myController.setScreen(ScreensFramework.CHOOSE_CLASS_SCREEN);
 	}

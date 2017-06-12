@@ -11,7 +11,7 @@ public class Main {
 	private static Player player;
 	
 	public static void main(String[] args) {
-		//tmp();
+		tmp();
 		int tmp;
 		int tmpMod;
 		for (int i = 0; i < 20; i++) {
@@ -77,15 +77,21 @@ public class Main {
 		//			System.out.println(i);
 		//		}
 		//
-		System.out.println(d6.sumBestOf(4, 3));
-		System.out.println(d6.sumBestOf(4, 3));
-		System.out.println(d6.sumBestOf(4, 3));
-		System.out.println(d6.sumBestOf(4, 3));
-		System.out.println(d6.sumBestOf(4, 3));
-		System.out.println(d6.sumBestOf(4, 3));
-		System.out.println();
-		System.out.println(new Dice(3).roll());
-		System.out.println(new Dice(24).roll());
+		//		System.out.println(d6.sumBestOf(4, 3));
+		//		System.out.println(d6.sumBestOf(4, 3));
+		//		System.out.println(d6.sumBestOf(4, 3));
+		//		System.out.println(d6.sumBestOf(4, 3));
+		//		System.out.println(d6.sumBestOf(4, 3));
+		//		System.out.println(d6.sumBestOf(4, 3));
+		//		System.out.println();
+		//		System.out.println(new Dice(3).roll());
+		//		System.out.println(new Dice(24).roll());
+		
+		int var = 0;
+		System.out.println(var);
+		++var;
+		System.out.println(var);
+		
 		
 		System.exit(0);
 	}

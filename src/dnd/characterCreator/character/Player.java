@@ -1,25 +1,25 @@
 package dnd.characterCreator.character;
 
-import dnd.characterCreator.character.classes.Classes;
-import dnd.characterCreator.character.races.Races;
+import dnd.characterCreator.character.classes.IClass;
+import dnd.characterCreator.character.races.IRace;
 import dnd.characterCreator.utility.Dice;
 
 public class Player {
 	public static Player playerCharacter;
 	
-	private Races playerRace;
-	private Classes playerClass;
+	private IRace playerRace;
+	private IClass playerClass;
 	
 	private int[] abilityScores = new int[6];
 	
-	public Player(Races playerRace, Classes playerClass, int[] abilityScores) {
+	public Player(IRace playerRace, IClass playerClass, int[] abilityScores) {
 		this.playerRace = playerRace;
 		this.playerClass = playerClass;
 		
 		init();
 	}
 	
-	public Player(Races playerRace, Classes playerClass) {
+	public Player(IRace playerRace, IClass playerClass) {
 		this.playerRace = playerRace;
 		this.playerClass = playerClass;
 		
@@ -44,11 +44,11 @@ public class Player {
 	 *  Setters
 	 */
 	
-	public void setRace(Races playerRace) {
+	public void setRace(IRace playerRace) {
 		this.playerRace = playerRace;
 	}
 	
-	public void setClass(Classes playerClass) {
+	public void setClass(IClass playerClass) {
 		this.playerClass = playerClass;
 	}
 	
@@ -60,11 +60,11 @@ public class Player {
 	 * Getters
 	 */
 	
-	public Races getPlayerRace() {
+	public IRace getPlayerRace() {
 		return playerRace;
 	}
 	
-	public Classes getPlayerClass() {
+	public IClass getPlayerClass() {
 		return playerClass;
 	}
 	

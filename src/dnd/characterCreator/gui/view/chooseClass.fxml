@@ -11,6 +11,11 @@
                 <Font name="Book Antiqua" size="48.0"/>
             </font>
         </Text>
+        <Button fx:id="btn_previous" layoutX="32.0" layoutY="32.0" mnemonicParsing="false" text="←">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Button>
         <Button fx:id="btn_barbarian" alignment="CENTER" layoutX="350.0" layoutY="170.0" mnemonicParsing="false"
                 prefHeight="40.0" prefWidth="137.0" text="Barbarian" textAlignment="CENTER">
             <font>
@@ -82,11 +87,6 @@
                 prefHeight="40.0" prefWidth="137.0" text="Random" textAlignment="CENTER">
             <font>
                 <Font name="Book Antiqua" size="20.0"/>
-            </font>
-        </Button>
-        <Button fx:id="btn_previous" layoutX="34.0" layoutY="34.0" mnemonicParsing="false" text="←">
-            <font>
-                <Font name="System Bold" size="20.0"/>
             </font>
         </Button>
     </children>
